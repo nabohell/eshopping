@@ -3,7 +3,7 @@
 This Assignment solution of an online shopping backend APIs, that wretten using Springboot and mysql database.
 ###### Prerequisites
 * docker v2.5+
-* docker-compose version 1.27
+* docker-compose version 1.27+
 ## Build using maven (optional)
     mvn clean install package 
 
