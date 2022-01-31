@@ -1,15 +1,31 @@
 # Shopping Cart Backend API
 
 This Assignment solution of an online shopping backend APIs, that wretten using Springboot and mysql database.
+######Prerequisites
+* docker v2.5+
+* docker-compose version 1.27
+## Build using maven (optional)
+    mvn clean install package 
 
-## Build
+## Run the app using docker-compose
+navigate to project directory and run the following
 
+    docker-compose up -d
+######Default Port
+    
+    9000
 
-## Run the app
+######Users
 
-    docker-compose up -d build
-    docker-compose`to run solution program  and mysql db.
+* Admin
 
+        username: admin
+        passwrod: password
+
+* Customer
+    
+        username: john
+        passwrod: password
 
 # REST API
 

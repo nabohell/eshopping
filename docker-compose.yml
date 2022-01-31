@@ -1,0 +1,27 @@
+version: '3.7'
+
+volumes:
+  db-vol:
+
+networks:
+  backend:
+
+services:
+  eshopping-server:
+    build: ./
+    ports:
+      - "9000:9000"
+    depends_on:
+      - db
+    networks:
+      - backend
+  db:
+    build: ./database
+    environment:
+      MYSQL_ROOT_PASSWORD: db
+    volumes:
+      - db-vol:/var/lib/mysql
+    ports:
+      - "3306"
+    networks:
+      - backend
