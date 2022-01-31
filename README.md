@@ -11,11 +11,11 @@ This Assignment solution of an online shopping backend APIs, that wretten using 
 navigate to project directory and run the following
 
     docker-compose up -d
-######Default Port
+###### Port
     
     9000
 
-######Users
+###### Users
 
 * Admin
 
@@ -239,9 +239,9 @@ PUT /api/cart/checkout
 ## Product Catalog
 GET /api/product
 ##### Request
-######Headers
+###### Headers
      Authorization: "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huIiwiZXhwIjoxNjQzNTg0ODk3LCJpYXQiOjE2NDM1NjY4OTd9.M77c_RsFHXyxhGdBW0Ekg9cy55g6d9hsF5QRdVWzv6tqvFpyJtXn5tFXYNq646Zo2i8k_zBKQcmtH7R3JpVIGg"
-######Params
+###### Params
     * Search: [Product Name]
     * Page#: [default product page = 0 ]
     * Size#: [default product page size = 20]
@@ -290,9 +290,9 @@ GET /api/product
 ## News 
 GET /api/news
 ##### Request
-######Headers
+###### Headers
      Authorization: "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huIiwiZXhwIjoxNjQzNTg0ODk3LCJpYXQiOjE2NDM1NjY4OTd9.M77c_RsFHXyxhGdBW0Ekg9cy55g6d9hsF5QRdVWzv6tqvFpyJtXn5tFXYNq646Zo2i8k_zBKQcmtH7R3JpVIGg"
-######Params
+###### Params
     * Search: [title]
     * Page#: [default product page = 0 ]
     * Size#: [default product page size = 20]
@@ -341,9 +341,9 @@ GET /api/news
 ## Product Catalog
 GET /api/admin/product
 ##### Request
-######Headers
+###### Headers
      Authorization: "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huIiwiZXhwIjoxNjQzNTg0ODk3LCJpYXQiOjE2NDM1NjY4OTd9.M77c_RsFHXyxhGdBW0Ekg9cy55g6d9hsF5QRdVWzv6tqvFpyJtXn5tFXYNq646Zo2i8k_zBKQcmtH7R3JpVIGg"
-######Params
+###### Params
     * Search: [search for product name contnaing]
     * Page#: [default product page = 0 ]
     * Size#: [default product page size = 20]
@@ -407,9 +407,9 @@ GET /api/admin/product
 ## Add Product
 POST /api/admin/product
 ##### Request
-######Headers
+###### Headers
      Authorization: "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huIiwiZXhwIjoxNjQzNTg0ODk3LCJpYXQiOjE2NDM1NjY4OTd9.M77c_RsFHXyxhGdBW0Ekg9cy55g6d9hsF5QRdVWzv6tqvFpyJtXn5tFXYNq646Zo2i8k_zBKQcmtH7R3JpVIGg"
-######Paylod
+###### Paylod
     {
         "name": "Red Wine",
         "price": 75,
@@ -428,9 +428,9 @@ POST /api/admin/product
 ## Delete Product
 DELETE /api/admin/product/{id}
 ##### Request
-######Headers
+###### Headers
      Authorization: "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huIiwiZXhwIjoxNjQzNTg0ODk3LCJpYXQiOjE2NDM1NjY4OTd9.M77c_RsFHXyxhGdBW0Ekg9cy55g6d9hsF5QRdVWzv6tqvFpyJtXn5tFXYNq646Zo2i8k_zBKQcmtH7R3JpVIGg"
-######Path Variable
+###### Path Variable
     id: product id
 
 ### Response
@@ -439,12 +439,12 @@ DELETE /api/admin/product/{id}
 ## Update Product
 PUT /api/admin/product/{id}
 ##### Request
-######Headers
+###### Headers
      Authorization: "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huIiwiZXhwIjoxNjQzNTg0ODk3LCJpYXQiOjE2NDM1NjY4OTd9.M77c_RsFHXyxhGdBW0Ekg9cy55g6d9hsF5QRdVWzv6tqvFpyJtXn5tFXYNq646Zo2i8k_zBKQcmtH7R3JpVIGg"
-######Path Variable
+###### Path Variable
     id: product id
 
-######Payload
+###### Payload
     {
         "name":"Red Wine since 1988",
         "price":"200",
@@ -464,9 +464,9 @@ PUT /api/admin/product/{id}
 ## News
 GET /api/admin/news
 ##### Request
-######Headers
+###### Headers
      Authorization: "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huIiwiZXhwIjoxNjQzNTg0ODk3LCJpYXQiOjE2NDM1NjY4OTd9.M77c_RsFHXyxhGdBW0Ekg9cy55g6d9hsF5QRdVWzv6tqvFpyJtXn5tFXYNq646Zo2i8k_zBKQcmtH7R3JpVIGg"
-######Params
+###### Params
     * Search: [title contnaing]
     * Page#: [default product page = 0 ]
     * Size#: [default product page size = 20]
@@ -538,9 +538,9 @@ POST /api/admin/news
 ## Delete Product
 DELETE /api/admin/news/{id}
 ##### Request
-######Headers
+###### Headers
      Authorization: "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huIiwiZXhwIjoxNjQzNTg0ODk3LCJpYXQiOjE2NDM1NjY4OTd9.M77c_RsFHXyxhGdBW0Ekg9cy55g6d9hsF5QRdVWzv6tqvFpyJtXn5tFXYNq646Zo2i8k_zBKQcmtH7R3JpVIGg"
-######Path Variable
+###### Path Variable
     id: News Item id
 
 ### Response
@@ -549,12 +549,12 @@ DELETE /api/admin/news/{id}
 ## Update News Item
 PUT /api/admin/news/{id}
 ##### Request
-######Headers
+###### Headers
      Authorization: "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huIiwiZXhwIjoxNjQzNTg0ODk3LCJpYXQiOjE2NDM1NjY4OTd9.M77c_RsFHXyxhGdBW0Ekg9cy55g6d9hsF5QRdVWzv6tqvFpyJtXn5tFXYNq646Zo2i8k_zBKQcmtH7R3JpVIGg"
-######Path Variable
+###### Path Variable
     id: News Item id
 
-######Payload
+###### Payload
     {
         "title": "30% Sall on Jack Danil Hunny 750",
         "description": null
